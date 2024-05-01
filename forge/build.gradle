@@ -100,7 +100,7 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             groupId project.group
-            artifact project.tasks.jarJar
+            artifactId base.archivesName.get()
             version project.version
             from components.java
         }
