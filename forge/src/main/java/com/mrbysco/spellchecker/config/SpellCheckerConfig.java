@@ -67,6 +67,6 @@ public class SpellCheckerConfig {
 
 	@SubscribeEvent
 	public static void onFileChange(final ModConfigEvent.Reloading configEvent) {
-		Constants.LOGGER.fatal("SpellChecker's config just got changed on the file system!");
+		Constants.LOGGER.warn("SpellChecker's config just got changed on the file system!");
 	}
 }
