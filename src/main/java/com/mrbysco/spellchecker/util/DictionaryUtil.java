@@ -21,12 +21,11 @@ public class DictionaryUtil {
 	public static File personalFolder;
 	public static File personalDictionary;
 
-	public static void AddToPersonal(String word) throws IOException {
+	public static void AddToPersonal(String word) {
 		try {
 			if (personalDictionary.exists()) {
 				FileWriter fileWriter = new FileWriter(personalDictionary, true);
-				if(!containsWordAlready(word.toLowerCase()))
-				{
+				if (!containsWordAlready(word.toLowerCase())) {
 					fileWriter.write(word.toLowerCase());
 					fileWriter.write("\n");
 				}
@@ -39,36 +38,34 @@ public class DictionaryUtil {
 				fileWriter.close();
 			}
 
-		}
-		catch (IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
-	public static boolean containsWordAlready(String word) throws FileNotFoundException {
+	public static boolean containsWordAlready(String word) {
 		boolean found = false;
 		try {
-		    Scanner scanner = new Scanner(personalDictionary);
+			Scanner scanner = new Scanner(personalDictionary);
 
-		    //now read the file line by line...
-		    int lineNum = 0;
-		    while (scanner.hasNextLine()) {
-		        String line = scanner.nextLine().toLowerCase();
-		        if(line.equals(word)) {
-				   scanner.close();
-		           return true;
-		        }
-		    }
-		    scanner.close();
-		}
-		catch(FileNotFoundException e) {
-		    //handle this
+			//now read the file line by line...
+			int lineNum = 0;
+			while (scanner.hasNextLine()) {
+				String line = scanner.nextLine().toLowerCase();
+				if (line.equals(word)) {
+					scanner.close();
+					return true;
+				}
+			}
+			scanner.close();
+		} catch (FileNotFoundException e) {
+			//handle this
 		}
 		return found;
 	}
 
 	public static InputStream getDictionaryWords(String locale_name) throws IOException {
-		if(!locale_name.isEmpty()) {
+		if (!locale_name.isEmpty()) {
 			return Minecraft.getInstance().getResourceManager().getResource(new ResourceLocation(Reference.MOD_ID, "dictionaries/" + locale_name + "/dictionary.txt")).getInputStream();
 		} else {
 			return Minecraft.getInstance().getResourceManager().getResource(new ResourceLocation(Reference.MOD_ID, "dictionaries/en_us/dictionary.txt")).getInputStream();
@@ -81,15 +78,15 @@ public class DictionaryUtil {
 			InputStream dictionary = DictionaryUtil.getDictionaryWords(locale);
 			BufferedReader dictReader = new BufferedReader(new InputStreamReader(dictionary, Charset.forName("UTF-8")));
 			SpellChecker.dict = new SpellDictionaryHashMap();
-			if(dictReader != null) {
+			if (dictReader != null) {
 				while ((line = dictReader.readLine()) != null) {
-		            //build dictionary
+					//build dictionary
 					SpellChecker.dict.addWord(line);
-		        }
+				}
 
 				dictReader.close();
-		        dictReader = null;
-		        dictionary = null;
+				dictReader = null;
+				dictionary = null;
 			}
 
 		} catch (IOException e) {
@@ -99,22 +96,20 @@ public class DictionaryUtil {
 
 	public static void addPersonalToLanguageMap() {
 		try {
-			if(personalDictionary != null && personalDictionary.exists()) {
+			if (personalDictionary != null && personalDictionary.exists()) {
 				Scanner scanner = new Scanner(personalDictionary);
 
-			    int lineNum = 0;
-			    while (scanner.hasNextLine()) {
-			        String line = scanner.nextLine().toLowerCase();
-			        if(!line.isEmpty()) {
-				        if(!SpellChecker.dict.isCorrect(line)) {
+				while (scanner.hasNextLine()) {
+					String line = scanner.nextLine().toLowerCase();
+					if (!line.isEmpty()) {
+						if (!SpellChecker.dict.isCorrect(line)) {
 							SpellChecker.dict.addWord(line);
-				        }
-			        }
-			    }
-			    scanner.close();
+						}
+					}
+				}
+				scanner.close();
 			}
-		}
-		catch (IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}

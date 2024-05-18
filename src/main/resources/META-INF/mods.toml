@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[34,)"
-license="All Rights Reserved"
+license="GPLv3"
 
 [[mods]]
 modId="spellchecker"

@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8.4",
+  "compatibilityLevel": "JAVA_8",
+  "package": "com.mrbysco.spellchecker.mixin",
+  "refmap": "spellchecker.refmap.json",
+  "target": "@env(DEFAULT)",
+  "client": [
+    "ChatScreenMixin"
+  ]
+}
