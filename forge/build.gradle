@@ -3,7 +3,7 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
-    id 'net.neoforged.gradle.userdev' version '7.0.118'
+    id 'net.neoforged.gradle.userdev' version '7.0.153'
     id 'net.darkhax.curseforgegradle'
     id 'com.modrinth.minotaur'
 }
@@ -145,6 +145,6 @@ if (System.getenv().MODRINTH_KEY) {
         uploadFile = file("${project.buildDir}/libs/${archivesBaseName}-${version}.jar")
         changelog = fileContents
         gameVersions = ["${minecraft_version}"]
-        loaders = ["neoforge", "forge"]
+        loaders = ["neoforge"]
     }
 }

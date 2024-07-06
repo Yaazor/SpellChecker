@@ -8,8 +8,8 @@ This mod compares what you type in chat with the selected list of dictionary wor
 
 ## License ##
 * Spell Checker is licensed under the GNU Lesser General Public License v3.0 (LGPLv3)
-    - (c) 2022 Mrbysco
+    - (c) 2024 Mrbysco
   - [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
 ## Downloads ##
-Downloads will be located on [CurseForge](https://minecraft.curseforge.com/projects/spell-checker)
+Downloads will be located on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/spell-checker)
