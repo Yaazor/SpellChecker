@@ -236,7 +236,9 @@ public class SuggestionUtil {
 					strippedWord = strippedWord.replace("'s", "");
 					strippedWord = strippedWord.replace("'tje", "");
 				}else if(locale.equals("fr_fr")) {
-					String[] splitWord = strippedWord.split("'");
+					String preWord = strippedWord.replaceAll("'", "|");
+					preWord = preWord.replaceAll("-", "|");
+					String[] splitWord = preWord.split("\\|");
                     ArrayList<String> wordInfos = new ArrayList<>(Arrays.asList(splitWord));
 
 					if(wordInfos.size() > 1) {
