@@ -15,11 +15,8 @@ import net.minecraft.client.gui.screens.ChatScreen;
 import org.lwjgl.glfw.GLFW;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class SuggestionUtil {
 	public static final HashMap<String, ArrayList<String>> wordSuggestions = new LinkedHashMap<>();
@@ -238,8 +235,15 @@ public class SuggestionUtil {
 				if (locale.equals("nl_nl")) {
 					strippedWord = strippedWord.replace("'s", "");
 					strippedWord = strippedWord.replace("'tje", "");
+				}else if(locale.equals("fr_fr")) {
+					String[] splitWord = strippedWord.split("'");
+                    ArrayList<String> wordInfos = new ArrayList<>(Arrays.asList(splitWord));
+
+					if(wordInfos.size() > 1) {
+						strippedWord = wordInfos.get(1);
+					}
 				}
-			}
+ 			}
 
 			strippedWord = strippedWord.replaceAll("[^\\p{IsAlphabetic}\\d]", "");
 		}
