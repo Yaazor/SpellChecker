@@ -163,7 +163,7 @@ public class SuggestionUtil {
 		String visibleString = chatText.substring(lineScrollOffset);
 
 		String[] CurrentWords = visibleString.split(" ");
-		if (CurrentWords.length > 0) {
+		if (CurrentWords.length > 0 && !CurrentWords[0].startsWith("/")) {
 			for (int i = 0; i < CurrentWords.length; i++) {
 				String wordToCheck = CurrentWords[i];
 				String strippedWord = wordToCheck;
