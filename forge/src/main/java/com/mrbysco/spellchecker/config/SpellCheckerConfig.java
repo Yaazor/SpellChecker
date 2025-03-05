@@ -21,8 +21,8 @@ public class SpellCheckerConfig {
 
 			language_to_check = builder
 					.translation("configgui.spellchecker.language_check.language_to_check")
-					.comment("LanguageEnum locale the mod uses to check your chat messages. [default: EN_US]")
-					.defineEnum("language_to_check", LanguageEnum.EN_US);
+					.comment("LanguageEnum locale the mod uses to check your chat messages. [default: FR_FR]")
+					.defineEnum("language_to_check", LanguageEnum.FR_FR);
 
 			builder.pop();
 			builder.comment("Checking settings")

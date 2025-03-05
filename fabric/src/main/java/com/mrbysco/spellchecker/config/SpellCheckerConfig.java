@@ -15,8 +15,8 @@ public class SpellCheckerConfig implements ConfigData {
 
 	public static class Client {
 		//General
-		@Comment("LanguageEnum locale the mod uses to check your chat messages. [default: EN_US]")
-		public LanguageEnum language_to_check = LanguageEnum.EN_US;
+		@Comment("LanguageEnum locale the mod uses to check your chat messages. [default: FR_FR]")
+		public LanguageEnum language_to_check = LanguageEnum.FR_FR;
 
 		@Comment("The threshold the mod uses to check how close a word needs to be to the wrongly spelled word. [default: 0]")
 		@BoundedDiscrete(min = 0, max = Integer.MAX_VALUE)

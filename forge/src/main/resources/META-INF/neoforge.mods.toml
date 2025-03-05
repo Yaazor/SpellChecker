@@ -8,7 +8,7 @@ modId="spellchecker"
 version="${file.jarVersion}"
 displayName="Spell Checker"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/spell-checker"
-authors="Mrbysco"
+authors="Mrbysco, Yazor"
 description='''
 Need your spelling checked?
 '''

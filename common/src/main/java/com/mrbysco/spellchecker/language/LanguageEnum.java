@@ -6,7 +6,6 @@ public enum LanguageEnum {
 	DE_DE("de_de"),
 	EN_GB("en_gb"),
 	EN_US("en_us"),
-	ES_ES("es_es"),
 	FR_FR("fr_fr"),
 	IT_IT("it_it"),
 	NL_NL("nl_nl"),
