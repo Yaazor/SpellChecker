@@ -89,7 +89,8 @@ public class DictionaryUtil {
 			if (dictReader != null) {
 				while ((line = dictReader.readLine()) != null) {
 					//build dictionary
-					CommonClass.getDict().addWord(line);
+					String[] w = line.split(" ");
+					CommonClass.getDict().addWord(w[0]);
 				}
 
 				dictReader.close();

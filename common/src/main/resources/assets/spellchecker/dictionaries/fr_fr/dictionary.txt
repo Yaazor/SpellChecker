@@ -75,7 +75,7 @@
 âtres
 çà
 ç
-ça pronom
+ça
 è
 ère
 ères
@@ -9012,7 +9012,7 @@
 évidassiez
 évidassions
 évide
-évidement nom
+évidement
 évidements
 évidemment
 évidence
@@ -26250,7 +26250,7 @@ aveuglasses
 aveuglassiez
 aveuglassions
 aveugle
-aveuglement nom
+aveuglement
 aveuglent
 aveugler
 aveuglera
@@ -74184,7 +74184,7 @@ descriptive
 descriptives
 desiderata
 design
-designer nom
+designer
 designers
 designs
 despote
@@ -98490,7 +98490,7 @@ forcîmes
 forcît
 forcîtes
 force
-forcement nom
+forcement
 forcements
 forcent
 forceps
@@ -108675,7 +108675,7 @@ habitassent
 habitasses
 habitassiez
 habitassions
-habitat nom
+habitat
 habitation
 habitations
 habitats
@@ -115059,8 +115059,8 @@ indiscipliné
 indisciplinée
 indisciplinées
 indisciplinés
-indiscipline nom
-indisciplines nom
+indiscipline
+indisciplines
 indiscrète
 indiscrètement
 indiscrètes
@@ -120032,7 +120032,7 @@ isolationniste
 isolationnistes
 isolations
 isole
-isolement nom
+isolement
 isolements
 isolent
 isoler
@@ -130953,8 +130953,8 @@ mercis
 mercredi
 mercredis
 mercure
-mercuriale nom
-mercuriales nom
+mercuriale
+mercuriales
 mercuriel
 mercurielle
 mercurielles
@@ -134645,7 +134645,7 @@ muré
 murée
 murées
 murés
-mur nom
+mur
 mura
 murage
 murages
@@ -134726,7 +134726,7 @@ murmurions
 murmurons
 murons
 muros
-murs nom
+murs
 musâmes
 musât
 musâtes
@@ -142547,9 +142547,9 @@ pagayassent
 pagayasses
 pagayassiez
 pagayassions
-pagaye nom
+pagaye
 pagayer
-pagayes nom
+pagayes
 pagayeur
 pagayeurs
 pagayeuse
@@ -142803,7 +142803,7 @@ palindrome
 palindromes
 palinodie
 palinodies
-palis nom
+palis
 palissadâmes
 palissadât
 palissadâtes
@@ -147708,7 +147708,7 @@ perturbiez
 perturbions
 perturbons
 pervenche
-pervenches nom
+pervenches
 pervers
 perverse
 perverses
@@ -181451,8 +181451,8 @@ saccadé
 saccadée
 saccadées
 saccadés
-saccade nom
-saccades nom
+saccade
+saccades
 saccagèrent
 saccagé
 saccagée
@@ -181939,7 +181939,7 @@ salariassent
 salariasses
 salariassiez
 salariassions
-salariat nom
+salariat
 salariats
 salariaux
 salarier
@@ -191636,7 +191636,7 @@ surélevons
 surîmes
 surît
 surîtes
-sur prep ou aigre
+sur
 surabondâmes
 surabondât
 surabondâtes
